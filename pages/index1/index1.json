@@ -1,0 +1,13 @@
+{
+    "usingComponents": {},
+    "disableScroll": true,  
+    "navigationBarTitleText": "首页",
+    "navigationStyle": "custom",
+    
+    "permission": {
+      "scope.userLocation": {
+        "desc": "您的位置信息将用于展示当前位置"
+      }
+    }
+  }
+  

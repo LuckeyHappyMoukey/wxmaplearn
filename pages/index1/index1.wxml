@@ -1,0 +1,49 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 顶部标题 -->
+  <view class="header">
+    <text class="title">首页</text>
+  </view>
+
+  <!-- 腾讯地图容器 -->
+  <view class="map-container">
+    <map
+  id="campusMap"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  markers="{{markers}}"
+  polyline="{{polyline}}"
+  scale="16"
+  show-location
+  layer-style="2"
+  bindmarkertap="onMarkerTap"
+  style="width: 100%; height: 70vh;">
+</map>
+
+    <text class="map-notice">腾讯地图API显示位置</text>
+  </view>
+
+  <!-- 搜索栏 -->
+  <view class="search-container">
+    <image class="search-icon" src="/static/icons/search.png"></image>
+    <input 
+      class="search-input"
+      placeholder="搜索"
+      confirm-type="search"
+      bindconfirm="handleSearch"/>
+  </view>
+
+  <view wx:if="{{showMap}}">
+  <map 
+    id="campusMap"
+    longitude="{{longitude}}" 
+    latitude="{{latitude}}"
+    scale="{{scale}}"
+    markers="{{markers}}"
+    bindmarkertap="onMarkerTap"
+    bindregionchange="onRegionChange"
+    style="width: 100%; height: 70vh;">
+  </map>
+</view>
+
+</view>

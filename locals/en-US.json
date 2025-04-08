@@ -1,0 +1,39 @@
+{
+    "categories": {
+      "new-students": {
+        "title": "New Students",
+        "items": {
+          "报到点": "Registration",
+          "宿舍区": "Dormitory",
+          "教务处": "Academic Office"
+        }
+      },
+      "study": {
+        "title": "Study Guide",
+        "items": {
+          "教学楼": "Teaching Building",
+          "实验室": "Laboratory",
+          "自习区": "Study Area"
+        }
+      },
+      "life": {
+        "title": "Campus Life",
+        "items": {
+          "食堂": "Canteen",
+          "校医院": "Infirmary",
+          "快递点": "Express Center"
+        }
+      }
+    },
+    "buttons": {
+      "arNav": "AR Navigation",
+      "emergency": "Emergency Help",
+      "welcome": "Welcome to Campus",
+      "searchPlaceholder": "Search locations..."
+    },
+    "guideTitles": {
+      "freshmanTips": "Freshman Guide",
+      "quickStart": "Quick Start"
+    }
+  }
+  

@@ -1,0 +1,8 @@
+/* components/scene-entrance/scene-entrance.wxss */
+.school-logo{
+        position: absolute;
+        top: 60rpx;
+        right: 30rpx;
+        width: 300rpx;
+        height: 250rpx;
+}

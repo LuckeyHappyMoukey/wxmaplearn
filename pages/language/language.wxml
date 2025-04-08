@@ -1,0 +1,31 @@
+<!--pages/language/language.wxml-->
+<view class="language-page">
+  <!-- 顶部导航栏 -->
+  <view class="nav-bar">
+    <view class="back-btn" bindtap="goBack">
+      <image src="/assets/icons/back.png" class="back-icon"></image>
+    </view>
+    <text class="nav-title">语言切换</text>
+  </view>
+
+  <!-- 主标题 -->
+  <view class="main-title">
+    <text>选择您想使用的语言</text>
+  </view>
+
+  <!-- 语言选项区域 -->
+  <view class="language-options">
+    <block wx:for="{{languages}}" wx:key="code">
+      <view 
+        class="language-option {{activeLanguage === item.code ? 'active' : ''}}" 
+        bindtap="selectLanguage" 
+        data-code="{{item.code}}"
+      >
+        <view class="option-circle">
+          <text class="original-text">{{item.original}}</text>
+          <text class="translated-text">{{item.translated}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

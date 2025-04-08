@@ -1,0 +1,2 @@
+<!--pages/demo/demo.wxml-->
+<image src="/static/images/map.png" mode="" style="width: 750rpx;"/>

@@ -24,5 +24,11 @@
     "tabIndent": "auto",
     "tabSize": 2
   },
-  "appid": "wxc7928f774b1a085b"
+  "appid": "wxc7928f774b1a085b",
+  "plugins": {
+    "tencentmap": {
+      "version": "1.0.0",
+      "provider": "wx5bc2ac602a747594"
+    }
+  }
 }

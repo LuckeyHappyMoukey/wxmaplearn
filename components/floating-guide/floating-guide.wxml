@@ -1,0 +1,3 @@
+<!--components/floating-guide/floating-guide.wxml-->
+<view>
+<button class="container">一键探索</button></view>

@@ -1,4 +1,4 @@
-/**index.wxss**/
+/**login.wxss**/
 page {
   height: 100vh;
   display: flex;

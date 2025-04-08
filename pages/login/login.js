@@ -1,4 +1,3 @@
-// index.js
 const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
 
 Page({
@@ -22,7 +21,14 @@ Page({
     const { nickName } = this.data.userInfo
     this.setData({
       "userInfo.avatarUrl": avatarUrl,
-      hasUserInfo: nickName && avatarUrl && avatarUrl !== defaultAvatarUrl,
+      hasUserInfo: nickName && avatarUrl && avatarUrl!== defaultAvatarUrl,
+    }, () => {
+      // 当用户选择头像并且有昵称时，跳转到welcome页面
+      if (this.data.hasUserInfo) {
+        wx.navigateTo({
+          url: '../welcome/welcome'
+        });
+      }
     })
   },
   onInputChange(e) {
@@ -30,7 +36,14 @@ Page({
     const { avatarUrl } = this.data.userInfo
     this.setData({
       "userInfo.nickName": nickName,
-      hasUserInfo: nickName && avatarUrl && avatarUrl !== defaultAvatarUrl,
+      hasUserInfo: nickName && avatarUrl && avatarUrl!== defaultAvatarUrl,
+    }, () => {
+      // 当用户输入昵称并且有头像时，跳转到welcome页面
+      if (this.data.hasUserInfo) {
+        wx.navigateTo({
+          url: '../welcome/welcome'
+        });
+      }
     })
   },
   getUserProfile(e) {
@@ -42,6 +55,11 @@ Page({
         this.setData({
           userInfo: res.userInfo,
           hasUserInfo: true
+        }, () => {
+          // 当成功获取用户信息时，跳转到welcome页面
+          wx.navigateTo({
+            url: '../welcome/welcome'
+          });
         })
       }
     })

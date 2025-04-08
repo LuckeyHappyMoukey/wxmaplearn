@@ -1,0 +1,68 @@
+<!--pages/welcome/welcome.wxml-->
+<!-- 主页面结构 -->
+<view class="welcome-container">
+  <!-- 背景图层 -->
+  <view class="background-container">
+    <image class="background-image" src="/assets/images/campus-3d-background.jpg" mode="aspectFill"></image>
+    <view class="overlay-gradient"></view>
+  </view>
+
+  <!-- 校徽加载动画 -->
+  <view class="logo-animation" animation="{{logoAnimation}}">
+    <image class="school-logo" src="https://cv.jysd.com/attachment/logo/202305/17/1684309535608.png" mode="aspectFit"></image>
+    <view class="welcome-text">欢迎来到NBUFE！</view>
+  </view>
+
+  <!-- 智能搜索栏
+  <search-bar placeholder="搜索图书馆、食堂、教学楼..." 
+              bindsearch="handleSearch"
+              bindvoice="handleVoiceInput"/> -->
+
+  <!-- 场景化入口 -->
+  <scene-entrance categories="{{sceneCategories}}" 
+                  binditemtap="handleSceneItemTap"/>
+
+  <!-- AI地图入口 -->
+  <view class="map-container" bindtap="open3DMap">
+    <image class="map-preview" src="/static/images/map.png" mode="scaleToFill"></image>
+    <view class="map-overlay">
+      <view class="map-title">AI指引校园地图</view>
+      <view class="map-description">点击探索校园</view>
+    </view>
+    <view class="ar-button-container">
+      <ar-button bindtap="startARNavigation"/>
+    </view>
+  </view>
+
+  <!-- 特色功能入口 -->
+  <view class="feature-buttons">
+    <button class="feature-button" bindtap="showEmergencyHelp">
+      <image src="/assets/icons/emergency.png"></image>
+      <text>紧急求助</text>
+    </button>
+    <button class="feature-button" bindtap="openCollection">
+      <image src="/assets/icons/collection.png"></image>
+      <text>新生指南</text>
+    </button>
+  </view>
+
+  <!-- 语言设置浮动窗口 -->
+  <floating-guide show="{{showGuide}}" 
+                  bindclose="toggleGuide"/>
+</view>
+
+<!-- 触发语言设置的悬浮按钮 -->
+<view class="language-button" bindtap="navigateToLanguage">
+  <image src="/assets/icons/guide.png"></image>
+  <text>语言设置</text>
+</view>
+
+
+<!-- 底部隐私政策提示 -->
+<view class="privacy-notice">
+  <text class="notice-text">使用该应用即表示您同意</text>
+  <text class="policy-link" bindtap="navigateToPrivacy" >《隐私政策》</text>
+</view>
+
+
+
