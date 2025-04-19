@@ -1,11 +1,10 @@
 {
-    "usingComponents": {
-      "search-bar": "/components/search-bar/search-bar",
-      "scene-entrance": "/components/scene-entrance/scene-entrance",
-      "floating-guide": "/components/floating-guide/floating-guide",
-      "ar-button": "/components/ar-button/ar-button"
-    },
-    "navigationStyle": "custom",
-    "enablePullDownRefresh": false
-  }
-  
+  "usingComponents": {
+    "search-bar": "/components/search-bar/search-bar",
+    "scene-entrance": "/components/scene-entrance/scene-entrance",
+    "floating-guide": "/components/floating-guide/floating-guide",
+    "ar-button": "/components/ar-button/ar-button"
+  },
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false
+}

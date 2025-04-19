@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/welcome/welcome",
+    "pages/login/login",
     "pages/logs/logs",
     "pages/demo/demo",
     "pages/secret/secret",
@@ -9,7 +9,8 @@
     "pages/index1/index1",
     "pages/explore/explore",
     "pages/profile/profile",
-    "pages/category/category"
+    "pages/category/category",
+    "pages/website/website"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -52,15 +53,12 @@
       }
     ]
   },
-  
-    "permission": {
-      "scope.userLocation": {
-        "desc": "需要获取您的地理位置以提供导航服务"
-      }
-    },
-    "requiredPrivateInfos": ["getLocation"]
-
-  
-  
-
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取您的地理位置以提供导航服务"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
 }

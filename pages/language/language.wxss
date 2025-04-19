@@ -1,7 +1,7 @@
 /* pages/language/language.wxss */
 .language-page {
     /* 更改大背景颜色为淡蓝色 */
-    background-color: #f0f8ff; 
+    background-color: #f0f8ff;
     min-height: 100vh;
     width: 100%;
     padding-bottom: 40rpx;
@@ -9,10 +9,8 @@
 
 /* 导航栏样式 */
 .nav-bar {
-  
-    height: 150rpx; 
+    height: 180rpx;
     width: 100%;
-    /* 更改导航栏背景颜色为浅蓝色 */
     background-color:#C6DCF9;
     display: flex;
     align-items: center;
@@ -31,11 +29,10 @@
     font-size: 40rpx;
     color: #17171f;
     text-align: center;
-    width: 100%;
-    /* 恢复为默认字体 */
-    font-family: system-ui, -apple-system, sans-serif; 
-    /* 语言切换文字距离导航栏的距离 */
+    margin-right: 50rpx;
     margin-bottom: -80rpx;
+    width: 100%;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 /* 主标题样式 */
@@ -96,4 +93,4 @@
     color: #666666;
     margin-top: 10rpx;
     font-family: system-ui, -apple-system, sans-serif;
-}    
+}
