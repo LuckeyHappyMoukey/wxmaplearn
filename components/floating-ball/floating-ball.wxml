@@ -1,0 +1,4 @@
+<!-- components/floating-ball/floating-ball.wxml -->
+<view class="container" bindtap="onTap">
+  <image class="icon" src="/static/ball-icon.png" mode="aspectFit" />
+</view>

@@ -1,0 +1,19 @@
+/* components/floating-ball/floating-ball.wxss */
+.container {
+  position: fixed;
+  right: 40rpx;
+  bottom: 120rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: #1955a0;
+  border-radius: 50%;
+  box-shadow: 0 4rpx 24rpx rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+}

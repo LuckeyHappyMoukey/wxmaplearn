@@ -1,0 +1,5 @@
+<!-- pages/test/test.wxml -->
+<view style="height: 100vh; background: #f5f5f5;">
+  <text style="font-size: 32rpx; color: #1955a0; margin: 60rpx;">浮动球组件可视化测试</text>
+  <floating-ball />
+</view>
