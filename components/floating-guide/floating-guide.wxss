@@ -1,5 +1,0 @@
-/* components/floating-guide/floating-guide.wxss */
-.container{
-    background: #1955a0;
-    border-radius: 50rpx;
-}
