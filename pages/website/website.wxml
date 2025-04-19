@@ -1,0 +1,2 @@
+<!--pages/webpage/webpage.wxml-->
+<web-view src="https://www.nbufe.edu.cn/"></web-view>
